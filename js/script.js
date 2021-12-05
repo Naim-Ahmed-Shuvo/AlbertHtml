@@ -53,4 +53,13 @@ $(document).ready(function(){
         });  
         
       });
+
+      $(window).scroll(function(){
+        console.log($(this).scrollTop());
+        if($(this).scrollTop()>=102){
+          $('nav').addClass('sticky')
+        } else{
+          $('nav').removeClass('sticky')
+        }
+      })
 })
