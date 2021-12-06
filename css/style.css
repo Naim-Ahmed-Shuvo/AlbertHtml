@@ -7,31 +7,34 @@
   overflow-x: hidden;
 }
 
-body {
+body, html {
   font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
-body a, body p, body span, body pre, body h1, body h2, body h4, body h3, body h5, body h6 {
+body a, body p, body span, body pre, body h1, body h2, body h4, body h3, body h5, body h6, html a, html p, html span, html pre, html h1, html h2, html h4, html h3, html h5, html h6 {
   margin: 0;
   padding: 0;
   font-family: inherit;
 }
 
-body a {
+body a, html a {
   text-decoration: none;
   padding: 0;
   margin: 0;
 }
 
-body ul li {
+body ul li, html ul li {
   list-style: none;
 }
 
-body div.wrapper__main {
+body div.wrapper__main, html div.wrapper__main {
   display: none;
 }
 
-body nav {
+body nav, html nav {
   padding: 10px;
   position: fixed;
   top: 0%;
@@ -39,11 +42,7 @@ body nav {
   z-index: 99;
 }
 
-body nav .sticky {
-  background: #000;
-}
-
-body nav .nav__logo span {
+body nav .nav__logo span, html nav .nav__logo span {
   background: rgba(104, 79, 255, 0.1);
   border-radius: 80px;
   padding: 8px 21px;
@@ -55,7 +54,7 @@ body nav .nav__logo span {
   line-height: 24px;
 }
 
-body nav .nav__links ul {
+body nav .nav__links ul, html nav .nav__links ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,11 +67,11 @@ body nav .nav__links ul {
   padding-top: 10px;
 }
 
-body nav .nav__links ul li {
+body nav .nav__links ul li, html nav .nav__links ul li {
   margin: 0px 15px;
 }
 
-body nav .nav__links ul li a {
+body nav .nav__links ul li a, html nav .nav__links ul li a {
   text-decoration: none;
   color: #0A1931;
   text-transform: capitalize;
@@ -81,29 +80,37 @@ body nav .nav__links ul li a {
   line-height: 40px;
 }
 
-body nav .nav__links ul li a:hover {
+body nav .nav__links ul li a:hover, html nav .nav__links ul li a:hover {
   border-bottom: 1px solid #333333;
 }
 
-body nav.sticky {
+body nav .nav__links ul li .active, html nav .nav__links ul li .active {
+  border-bottom: 1px solid #333333;
+}
+
+body nav.sticky, html nav.sticky {
   background: #e9edf7;
   border-bottom: 1px solid rgba(104, 79, 255, 0.7);
   -webkit-transition: all .5s ease-in;
   transition: all .5s ease-in;
 }
 
-body header {
+body nav.sticky .nav__links ul li .active, html nav.sticky .nav__links ul li .active {
+  border-bottom: 1px solid #333333;
+}
+
+body header, html header {
   background: url("../img/header-bg.svg"), no-repeat center;
   background-size: cover;
   padding-top: 100px;
 }
 
-body header .header__hero .hero__text {
+body header .header__hero .hero__text, html header .header__hero .hero__text {
   height: 100%;
   padding-top: 53px;
 }
 
-body header .header__hero .hero__text h4 {
+body header .header__hero .hero__text h4, html header .header__hero .hero__text h4 {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
@@ -111,11 +118,11 @@ body header .header__hero .hero__text h4 {
   line-height: 98px;
 }
 
-body header .header__hero .hero__text h4 span {
+body header .header__hero .hero__text h4 span, html header .header__hero .hero__text h4 span {
   color: #684FFF;
 }
 
-body header .header__hero .hero__text p {
+body header .header__hero .hero__text p, html header .header__hero .hero__text p {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -123,11 +130,11 @@ body header .header__hero .hero__text p {
   color: #737D8C;
 }
 
-body header .header__hero .hero__text .buttons {
+body header .header__hero .hero__text .buttons, html header .header__hero .hero__text .buttons {
   margin-top: 20px;
 }
 
-body header .header__hero .hero__text .buttons a {
+body header .header__hero .hero__text .buttons a, html header .header__hero .hero__text .buttons a {
   border: 1px solid #684FFF;
   border-radius: 5px;
   padding: 7px 12px;
@@ -138,22 +145,22 @@ body header .header__hero .hero__text .buttons a {
   transition: all .5s ease-in-out;
 }
 
-body header .header__hero .hero__text .buttons a:hover {
+body header .header__hero .hero__text .buttons a:hover, html header .header__hero .hero__text .buttons a:hover {
   background: #684FFF;
   color: #FFFFFF;
 }
 
-body header .header__hero .hero__text .follow__me span {
+body header .header__hero .hero__text .follow__me span, html header .header__hero .hero__text .follow__me span {
   color: #0A1931;
   font-size: 14px;
   font-weight: normal;
 }
 
-body header .header__hero .hero__text .follow__me .links {
+body header .header__hero .hero__text .follow__me .links, html header .header__hero .hero__text .follow__me .links {
   padding: 20px 0px;
 }
 
-body header .header__hero .hero__text .follow__me .links a {
+body header .header__hero .hero__text .follow__me .links a, html header .header__hero .hero__text .follow__me .links a {
   height: 35px;
   width: 35px;
   display: inline-block;
@@ -168,34 +175,34 @@ body header .header__hero .hero__text .follow__me .links a {
   transition: all .5s ease-in-out;
 }
 
-body header .header__hero .hero__text .follow__me .links a i {
+body header .header__hero .hero__text .follow__me .links a i, html header .header__hero .hero__text .follow__me .links a i {
   color: #0A1931;
   font-size: 14x;
 }
 
-body header .header__hero .hero__text .follow__me .links a:hover {
+body header .header__hero .hero__text .follow__me .links a:hover, html header .header__hero .hero__text .follow__me .links a:hover {
   background: #684FFF;
 }
 
-body header .header__hero .hero__text .follow__me .links a:hover i {
+body header .header__hero .hero__text .follow__me .links a:hover i, html header .header__hero .hero__text .follow__me .links a:hover i {
   color: #FFFFFF;
 }
 
-body header .header__hero .hero__text .follow__me .links a:nth-child(1) {
+body header .header__hero .hero__text .follow__me .links a:nth-child(1), html header .header__hero .hero__text .follow__me .links a:nth-child(1) {
   margin-left: 0px;
 }
 
-body .intro {
+body .intro, html .intro {
   padding: 100px 30px;
   background-color: #DFE3EB;
   background: url("../img/intro-bg.svg") no-repeat center;
 }
 
-body .intro .intro__text {
+body .intro .intro__text, html .intro .intro__text {
   padding-left: 20px;
 }
 
-body .intro .intro__text h4 {
+body .intro .intro__text h4, html .intro .intro__text h4 {
   font-style: normal;
   font-weight: normal;
   font-size: 44px;
@@ -203,7 +210,7 @@ body .intro .intro__text h4 {
   color: #0A1931;
 }
 
-body .intro .intro__text p {
+body .intro .intro__text p, html .intro .intro__text p {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -212,14 +219,14 @@ body .intro .intro__text p {
   margin: 10px 0px;
 }
 
-body .intro .intro__text .achivement {
+body .intro .intro__text .achivement, html .intro .intro__text .achivement {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 10px 0px;
 }
 
-body .intro .intro__text .achivement .acv_1, body .intro .intro__text .achivement .acv_2 {
+body .intro .intro__text .achivement .acv_1, body .intro .intro__text .achivement .acv_2, html .intro .intro__text .achivement .acv_1, html .intro .intro__text .achivement .acv_2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,7 +235,7 @@ body .intro .intro__text .achivement .acv_1, body .intro .intro__text .achivemen
           align-items: center;
 }
 
-body .intro .intro__text .achivement .acv_1 span, body .intro .intro__text .achivement .acv_2 span {
+body .intro .intro__text .achivement .acv_1 span, body .intro .intro__text .achivement .acv_2 span, html .intro .intro__text .achivement .acv_1 span, html .intro .intro__text .achivement .acv_2 span {
   font-style: normal;
   font-weight: normal;
   font-size: 56px;
@@ -236,14 +243,14 @@ body .intro .intro__text .achivement .acv_1 span, body .intro .intro__text .achi
   margin-right: 10px;
 }
 
-body .intro .intro__text .achivement .acv_1 p, body .intro .intro__text .achivement .acv_2 p {
+body .intro .intro__text .achivement .acv_1 p, body .intro .intro__text .achivement .acv_2 p, html .intro .intro__text .achivement .acv_1 p, html .intro .intro__text .achivement .acv_2 p {
   color: #0A1931;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
 }
 
-body .intro .intro__text .button a {
+body .intro .intro__text .button a, html .intro .intro__text .button a {
   background-color: #684FFF;
   border-radius: 5px;
   padding: 7px 15px;
@@ -255,22 +262,22 @@ body .intro .intro__text .button a {
   transition: all .5s ease-in-out;
 }
 
-body .service {
+body .service, html .service {
   padding: 30px 0px;
 }
 
-body .service .service__header {
+body .service .service__header, html .service .service__header {
   text-align: center;
 }
 
-body .service .service__header h4 {
+body .service .service__header h4, html .service .service__header h4 {
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
   color: #0A1931;
 }
 
-body .service .service__header div {
+body .service .service__header div, html .service .service__header div {
   height: 3px;
   width: 80px;
   margin: 10px auto;
@@ -279,33 +286,33 @@ body .service .service__header div {
   opacity: 0.6;
 }
 
-body .service .cards .service__card {
+body .service .cards .service__card, html .service .cards .service__card {
   padding: 20px;
   background: #f2f3f5;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
 
-body .service .cards .service__card .top__icon i {
+body .service .cards .service__card .top__icon i, html .service .cards .service__card .top__icon i {
   color: #0A1931;
   font-size: 30px;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
 
-body .service .cards .service__card .main__content {
+body .service .cards .service__card .main__content, html .service .cards .service__card .main__content {
   padding-top: 100px;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
 
-body .service .cards .service__card .main__content h5 {
+body .service .cards .service__card .main__content h5, html .service .cards .service__card .main__content h5 {
   font-size: 30px;
   max-width: 190px;
   color: #0A1931;
 }
 
-body .service .cards .service__card .main__content div {
+body .service .cards .service__card .main__content div, html .service .cards .service__card .main__content div {
   height: 1px;
   width: 30px;
   background: #684FFF;
@@ -314,7 +321,7 @@ body .service .cards .service__card .main__content div {
   margin: 10px 0px;
 }
 
-body .service .cards .service__card .main__content a {
+body .service .cards .service__card .main__content a, html .service .cards .service__card .main__content a {
   text-decoration: none;
   color: #0A1931;
   display: -webkit-box;
@@ -327,7 +334,7 @@ body .service .cards .service__card .main__content a {
   transition: all .5s ease-in-out;
 }
 
-body .service .cards .service__card .main__content a span {
+body .service .cards .service__card .main__content a span, html .service .cards .service__card .main__content a span {
   margin-right: 10px;
   font-size: 16px;
   display: none;
@@ -335,39 +342,39 @@ body .service .cards .service__card .main__content a span {
   transition: all .5s ease-in-out;
 }
 
-body .service .cards .service__card:hover {
+body .service .cards .service__card:hover, html .service .cards .service__card:hover {
   background: #FFFFFF;
   /* Hover Shadow */
   -webkit-box-shadow: 4px 4px 10px rgba(10, 25, 49, 0.09);
           box-shadow: 4px 4px 10px rgba(10, 25, 49, 0.09);
 }
 
-body .service .cards .service__card:hover .top__icon i {
+body .service .cards .service__card:hover .top__icon i, html .service .cards .service__card:hover .top__icon i {
   color: #684FFF;
 }
 
-body .service .cards .service__card:hover .main__content a span, body .service .cards .service__card:hover .main__content a i {
+body .service .cards .service__card:hover .main__content a span, body .service .cards .service__card:hover .main__content a i, html .service .cards .service__card:hover .main__content a span, html .service .cards .service__card:hover .main__content a i {
   display: block;
   color: #684FFF;
 }
 
-body section.works {
+body section.works, html section.works {
   background: rgba(223, 227, 235, 0.4);
   padding: 50px 0px;
 }
 
-body section.works .work__header {
+body section.works .work__header, html section.works .work__header {
   text-align: center;
 }
 
-body section.works .work__header h4 {
+body section.works .work__header h4, html section.works .work__header h4 {
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
   color: #0A1931;
 }
 
-body section.works .work__header div {
+body section.works .work__header div, html section.works .work__header div {
   height: 3px;
   width: 80px;
   margin: 10px auto;
@@ -376,19 +383,19 @@ body section.works .work__header div {
   opacity: 0.6;
 }
 
-body section.works .work__cards .work__card .card__text {
+body section.works .work__cards .work__card .card__text, html section.works .work__cards .work__card .card__text {
   padding: 20px 10px;
   background: #FFFF;
 }
 
-body section.works .work__cards .work__card .card__text h4 {
+body section.works .work__cards .work__card .card__text h4, html section.works .work__cards .work__card .card__text h4 {
   color: #0A1931;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
 }
 
-body section.works .work__cards .work__card .card__text .see_work {
+body section.works .work__cards .work__card .card__text .see_work, html section.works .work__cards .work__card .card__text .see_work {
   margin-top: 10px;
   text-decoration: none;
   display: -webkit-box;
@@ -399,7 +406,7 @@ body section.works .work__cards .work__card .card__text .see_work {
           align-items: center;
 }
 
-body section.works .work__cards .work__card .card__text .see_work span {
+body section.works .work__cards .work__card .card__text .see_work span, html section.works .work__cards .work__card .card__text .see_work span {
   font-size: 16px;
   color: #684FFF;
   display: none;
@@ -408,39 +415,39 @@ body section.works .work__cards .work__card .card__text .see_work span {
   margin-right: 10px;
 }
 
-body section.works .work__cards .work__card .card__text .see_work i {
+body section.works .work__cards .work__card .card__text .see_work i, html section.works .work__cards .work__card .card__text .see_work i {
   font-size: 16px;
   color: #684FFF;
 }
 
-body section.works .work__cards .work__card:hover .card__text .see_work span {
+body section.works .work__cards .work__card:hover .card__text .see_work span, html section.works .work__cards .work__card:hover .card__text .see_work span {
   display: block;
 }
 
-body section.brands {
+body section.brands, html section.brands {
   padding: 60px 0px;
 }
 
-body section.brands .brand__info__text p {
+body section.brands .brand__info__text p, html section.brands .brand__info__text p {
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
 }
 
-body section.brands .brand__info__text p span {
+body section.brands .brand__info__text p span, html section.brands .brand__info__text p span {
   color: #684FFF;
 }
 
-body section.hire__me .container {
+body section.hire__me .container, html section.hire__me .container {
   background: url("../img/hire-bg.svg") no-repeat center;
   padding: 60px 0px;
 }
 
-body section.hire__me .info {
+body section.hire__me .info, html section.hire__me .info {
   text-align: center;
 }
 
-body section.hire__me .info h4 {
+body section.hire__me .info h4, html section.hire__me .info h4 {
   color: #FFFFFF;
   font-style: normal;
   font-weight: normal;
@@ -450,7 +457,7 @@ body section.hire__me .info h4 {
   margin: 20px auto;
 }
 
-body section.hire__me .info a {
+body section.hire__me .info a, html section.hire__me .info a {
   background-color: #684FFF;
   border-radius: 5px;
   padding: 7px 15px;
@@ -462,23 +469,23 @@ body section.hire__me .info a {
   transition: all .5s ease-in-out;
 }
 
-body section.testimonial {
+body section.testimonial, html section.testimonial {
   padding: 30px 0px;
   margin-top: 30px;
 }
 
-body section.testimonial .testimonial__header {
+body section.testimonial .testimonial__header, html section.testimonial .testimonial__header {
   text-align: center;
 }
 
-body section.testimonial .testimonial__header h4 {
+body section.testimonial .testimonial__header h4, html section.testimonial .testimonial__header h4 {
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
   color: #0A1931;
 }
 
-body section.testimonial .testimonial__header div {
+body section.testimonial .testimonial__header div, html section.testimonial .testimonial__header div {
   height: 3px;
   width: 80px;
   margin: 10px auto;
@@ -487,7 +494,7 @@ body section.testimonial .testimonial__header div {
   opacity: 0.6;
 }
 
-body section.testimonial .testimonial__chat .chat {
+body section.testimonial .testimonial__chat .chat, html section.testimonial .testimonial__chat .chat {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,43 +506,43 @@ body section.testimonial .testimonial__chat .chat {
   transition: all .5s ease-in-out;
 }
 
-body section.testimonial .testimonial__chat .chat .chat__img img {
+body section.testimonial .testimonial__chat .chat .chat__img img, html section.testimonial .testimonial__chat .chat .chat__img img {
   height: 52px;
   width: 52px;
   border-radius: 50%;
 }
 
-body section.testimonial .testimonial__chat .chat .chat__info h6 {
+body section.testimonial .testimonial__chat .chat .chat__info h6, html section.testimonial .testimonial__chat .chat .chat__info h6 {
   color: #0A1931;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
 }
 
-body section.testimonial .testimonial__chat .chat .chat__info p {
+body section.testimonial .testimonial__chat .chat .chat__info p, html section.testimonial .testimonial__chat .chat .chat__info p {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   color: #737D8C;
 }
 
-body section.testimonial .testimonial__chat .chat:hover {
+body section.testimonial .testimonial__chat .chat:hover, html section.testimonial .testimonial__chat .chat:hover {
   background: #f0f2f7;
   cursor: pointer;
 }
 
-body section.testimonial .testimonial__chat .chat.active {
+body section.testimonial .testimonial__chat .chat.active, html section.testimonial .testimonial__chat .chat.active {
   background: #f0f2f7;
 }
 
-body section.testimonial .mesg {
+body section.testimonial .mesg, html section.testimonial .mesg {
   background: #f5f7f8;
   padding: 20px;
   position: relative;
   overflow-x: visible;
 }
 
-body section.testimonial .mesg .mesg__header .rating {
+body section.testimonial .mesg .mesg__header .rating, html section.testimonial .mesg .mesg__header .rating {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -544,11 +551,11 @@ body section.testimonial .mesg .mesg__header .rating {
           align-items: center;
 }
 
-body section.testimonial .mesg .mesg__header .rating i {
+body section.testimonial .mesg .mesg__header .rating i, html section.testimonial .mesg .mesg__header .rating i {
   color: #FF8718;
 }
 
-body section.testimonial .mesg .mesg__header .rating span {
+body section.testimonial .mesg .mesg__header .rating span, html section.testimonial .mesg .mesg__header .rating span {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -556,12 +563,12 @@ body section.testimonial .mesg .mesg__header .rating span {
   margin-left: 5px;
 }
 
-body section.testimonial .mesg .mesg__header .fa-quote-right {
+body section.testimonial .mesg .mesg__header .fa-quote-right, html section.testimonial .mesg .mesg__header .fa-quote-right {
   font-size: 80px;
   color: #DFE3EB;
 }
 
-body section.testimonial .mesg .mseg__content p {
+body section.testimonial .mesg .mseg__content p, html section.testimonial .mesg .mseg__content p {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
@@ -570,7 +577,7 @@ body section.testimonial .mesg .mseg__content p {
   color: #0A1931;
 }
 
-body section.testimonial .mesg .tool__tip {
+body section.testimonial .mesg .tool__tip, html section.testimonial .mesg .tool__tip {
   height: 85px;
   width: 100px;
   background: #f5f7f8;
@@ -582,24 +589,24 @@ body section.testimonial .mesg .tool__tip {
   z-index: -1;
 }
 
-body section.blog__news {
+body section.blog__news, html section.blog__news {
   padding: 30px 0px;
   background: -webkit-gradient(linear, left top, right top, from(#f5f5f8), to(#FFFFFF));
   background: linear-gradient(to right, #f5f5f8, #FFFFFF);
 }
 
-body section.blog__news .blog__news__header {
+body section.blog__news .blog__news__header, html section.blog__news .blog__news__header {
   text-align: center;
 }
 
-body section.blog__news .blog__news__header h4 {
+body section.blog__news .blog__news__header h4, html section.blog__news .blog__news__header h4 {
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
   color: #0A1931;
 }
 
-body section.blog__news .blog__news__header div {
+body section.blog__news .blog__news__header div, html section.blog__news .blog__news__header div {
   height: 3px;
   width: 80px;
   margin: 10px auto;
@@ -608,29 +615,29 @@ body section.blog__news .blog__news__header div {
   opacity: 0.6;
 }
 
-body section.blog__news .blog__card {
+body section.blog__news .blog__card, html section.blog__news .blog__card {
   background: #FFFFFF;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
 
-body section.blog__news .blog__card .card__img img {
+body section.blog__news .blog__card .card__img img, html section.blog__news .blog__card .card__img img {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
-body section.blog__news .blog__card .card__img img:hover {
+body section.blog__news .blog__card .card__img img:hover, html section.blog__news .blog__card .card__img img:hover {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-body section.blog__news .blog__card .card__content {
+body section.blog__news .blog__card .card__content, html section.blog__news .blog__card .card__content {
   padding: 7px 20px;
 }
 
-body section.blog__news .blog__card .card__content span {
+body section.blog__news .blog__card .card__content span, html section.blog__news .blog__card .card__content span {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -640,7 +647,7 @@ body section.blog__news .blog__card .card__content span {
   color: #737D8C;
 }
 
-body section.blog__news .blog__card .card__content .main p {
+body section.blog__news .blog__card .card__content .main p, html section.blog__news .blog__card .card__content .main p {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
@@ -649,58 +656,58 @@ body section.blog__news .blog__card .card__content .main p {
   color: #0A1931;
 }
 
-body section.blog__news .blog__card .card__content .bottom {
+body section.blog__news .blog__card .card__content .bottom, html section.blog__news .blog__card .card__content .bottom {
   margin-top: 20px;
 }
 
-body section.blog__news .blog__card .card__content .bottom a {
+body section.blog__news .blog__card .card__content .bottom a, html section.blog__news .blog__card .card__content .bottom a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-decoration: none;
 }
 
-body section.blog__news .blog__card .card__content .bottom a span, body section.blog__news .blog__card .card__content .bottom a i {
+body section.blog__news .blog__card .card__content .bottom a span, body section.blog__news .blog__card .card__content .bottom a i, html section.blog__news .blog__card .card__content .bottom a span, html section.blog__news .blog__card .card__content .bottom a i {
   color: #684FFF;
 }
 
-body section.blog__news .blog__card .card__content .bottom a span {
+body section.blog__news .blog__card .card__content .bottom a span, html section.blog__news .blog__card .card__content .bottom a span {
   margin-right: 15px;
   display: none;
 }
 
-body section.blog__news .blog__card:hover {
+body section.blog__news .blog__card:hover, html section.blog__news .blog__card:hover {
   -webkit-box-shadow: 4px 4px 10px rgba(163, 178, 204, 0.09);
           box-shadow: 4px 4px 10px rgba(163, 178, 204, 0.09);
   cursor: pointer;
 }
 
-body section.blog__news .blog__card:hover .card__content .bottom a span {
+body section.blog__news .blog__card:hover .card__content .bottom a span, html section.blog__news .blog__card:hover .card__content .bottom a span {
   display: block;
 }
 
-body section.blog__news .blog__tabs .tab {
+body section.blog__news .blog__tabs .tab, html section.blog__news .blog__tabs .tab {
   padding: 15px;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   border-radius: 10px;
 }
 
-body section.blog__news .blog__tabs .tab p {
+body section.blog__news .blog__tabs .tab p, html section.blog__news .blog__tabs .tab p {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   color: #0A1931;
 }
 
-body section.blog__news .blog__tabs .tab .read__more {
+body section.blog__news .blog__tabs .tab .read__more, html section.blog__news .blog__tabs .tab .read__more {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 10px;
 }
 
-body section.blog__news .blog__tabs .tab .read__more span {
+body section.blog__news .blog__tabs .tab .read__more span, html section.blog__news .blog__tabs .tab .read__more span {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -711,36 +718,36 @@ body section.blog__news .blog__tabs .tab .read__more span {
   margin-right: 10px;
 }
 
-body section.blog__news .blog__tabs .tab .read__more i {
+body section.blog__news .blog__tabs .tab .read__more i, html section.blog__news .blog__tabs .tab .read__more i {
   font-size: 14px;
   color: #684FFF;
 }
 
-body section.blog__news .blog__tabs .tab:hover {
+body section.blog__news .blog__tabs .tab:hover, html section.blog__news .blog__tabs .tab:hover {
   background: #FFFFFF;
   cursor: pointer;
 }
 
-body section.blog__news .blog__tabs .tab:hover .read__more span {
+body section.blog__news .blog__tabs .tab:hover .read__more span, html section.blog__news .blog__tabs .tab:hover .read__more span {
   display: block;
 }
 
-body section.contact {
+body section.contact, html section.contact {
   padding: 50px 0px;
   background: url("../img/conatct-bg.jpg") no-repeat center rgba(255, 255, 255, 0.1);
   background-size: cover;
 }
 
-body section.contact .footer__form {
+body section.contact .footer__form, html section.contact .footer__form {
   background: #FFFFFF;
   padding: 20px;
 }
 
-body section.contact .footer__form .form__header {
+body section.contact .footer__form .form__header, html section.contact .footer__form .form__header {
   margin: 10px 0px;
 }
 
-body section.contact .footer__form .form__header h4 {
+body section.contact .footer__form .form__header h4, html section.contact .footer__form .form__header h4 {
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -748,11 +755,11 @@ body section.contact .footer__form .form__header h4 {
   color: #0A1931;
 }
 
-body section.contact .footer__form .input__box {
+body section.contact .footer__form .input__box, html section.contact .footer__form .input__box {
   margin: 10px 0px;
 }
 
-body section.contact .footer__form .input__box input {
+body section.contact .footer__form .input__box input, html section.contact .footer__form .input__box input {
   width: 100%;
   padding: 7px 10px;
   background: #FFFFFF;
@@ -765,31 +772,31 @@ body section.contact .footer__form .input__box input {
   transition: all .5s ease-in-out;
 }
 
-body section.contact .footer__form .input__box input::-webkit-input-placeholder {
+body section.contact .footer__form .input__box input::-webkit-input-placeholder, html section.contact .footer__form .input__box input::-webkit-input-placeholder {
   font-size: 14px;
   color: #737D8C;
 }
 
-body section.contact .footer__form .input__box input:-ms-input-placeholder {
+body section.contact .footer__form .input__box input:-ms-input-placeholder, html section.contact .footer__form .input__box input:-ms-input-placeholder {
   font-size: 14px;
   color: #737D8C;
 }
 
-body section.contact .footer__form .input__box input::-ms-input-placeholder {
+body section.contact .footer__form .input__box input::-ms-input-placeholder, html section.contact .footer__form .input__box input::-ms-input-placeholder {
   font-size: 14px;
   color: #737D8C;
 }
 
-body section.contact .footer__form .input__box input::placeholder {
+body section.contact .footer__form .input__box input::placeholder, html section.contact .footer__form .input__box input::placeholder {
   font-size: 14px;
   color: #737D8C;
 }
 
-body section.contact .footer__form .input__box input:focus {
+body section.contact .footer__form .input__box input:focus, html section.contact .footer__form .input__box input:focus {
   border: 1px solid #684FFF;
 }
 
-body section.contact .footer__form .input__box textarea {
+body section.contact .footer__form .input__box textarea, html section.contact .footer__form .input__box textarea {
   width: 100%;
   padding: 10px;
   width: 100%;
@@ -804,31 +811,31 @@ body section.contact .footer__form .input__box textarea {
   transition: all .5s ease-in-out;
 }
 
-body section.contact .footer__form .input__box textarea::-webkit-input-placeholder {
+body section.contact .footer__form .input__box textarea::-webkit-input-placeholder, html section.contact .footer__form .input__box textarea::-webkit-input-placeholder {
   font-size: 14px;
   color: #737D8C;
 }
 
-body section.contact .footer__form .input__box textarea:-ms-input-placeholder {
+body section.contact .footer__form .input__box textarea:-ms-input-placeholder, html section.contact .footer__form .input__box textarea:-ms-input-placeholder {
   font-size: 14px;
   color: #737D8C;
 }
 
-body section.contact .footer__form .input__box textarea::-ms-input-placeholder {
+body section.contact .footer__form .input__box textarea::-ms-input-placeholder, html section.contact .footer__form .input__box textarea::-ms-input-placeholder {
   font-size: 14px;
   color: #737D8C;
 }
 
-body section.contact .footer__form .input__box textarea::placeholder {
+body section.contact .footer__form .input__box textarea::placeholder, html section.contact .footer__form .input__box textarea::placeholder {
   font-size: 14px;
   color: #737D8C;
 }
 
-body section.contact .footer__form .input__box textarea:focus {
+body section.contact .footer__form .input__box textarea:focus, html section.contact .footer__form .input__box textarea:focus {
   border: 1px solid #684FFF;
 }
 
-body section.contact .footer__form .input__box button {
+body section.contact .footer__form .input__box button, html section.contact .footer__form .input__box button {
   padding: 7px 15px;
   background: transparent;
   border-radius: 5px;
@@ -843,28 +850,28 @@ body section.contact .footer__form .input__box button {
   transition: all .5s ease-in-out;
 }
 
-body section.contact .footer__form .input__box button:hover {
+body section.contact .footer__form .input__box button:hover, html section.contact .footer__form .input__box button:hover {
   background: #684FFF;
   color: #FFFFFF;
 }
 
-body section.contact .contact__links {
+body section.contact .contact__links, html section.contact .contact__links {
   background: #FFFF;
   padding: 30px 40px;
 }
 
-body section.contact .contact__links .link__title {
+body section.contact .contact__links .link__title, html section.contact .contact__links .link__title {
   margin: 10px 0px;
 }
 
-body section.contact .contact__links .link__title h4 {
+body section.contact .contact__links .link__title h4, html section.contact .contact__links .link__title h4 {
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
   color: #0A1931;
 }
 
-body section.contact .contact__links .links .link {
+body section.contact .contact__links .links .link, html section.contact .contact__links .links .link {
   margin: 10px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -875,7 +882,7 @@ body section.contact .contact__links .links .link {
   padding: 5px 0px;
 }
 
-body section.contact .contact__links .links .link .icon {
+body section.contact .contact__links .links .link .icon, html section.contact .contact__links .links .link .icon {
   margin-right: 20px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -884,12 +891,12 @@ body section.contact .contact__links .links .link .icon {
   overflow-x: visible;
 }
 
-body section.contact .contact__links .links .link .icon i {
+body section.contact .contact__links .links .link .icon i, html section.contact .contact__links .links .link .icon i {
   color: #684FFF;
   font-size: 20px;
 }
 
-body section.contact .contact__links .links .link .info p {
+body section.contact .contact__links .links .link .info p, html section.contact .contact__links .links .link .info p {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
@@ -898,7 +905,7 @@ body section.contact .contact__links .links .link .info p {
   color: #0A1931;
 }
 
-body section.contact .contact__links .links .social__links {
+body section.contact .contact__links .links .social__links, html section.contact .contact__links .links .social__links {
   margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -911,7 +918,7 @@ body section.contact .contact__links .links .social__links {
           justify-content: space-between;
 }
 
-body section.contact .contact__links .links .social__links a {
+body section.contact .contact__links .links .social__links a, html section.contact .contact__links .links .social__links a {
   text-decoration: none;
   height: 50px;
   width: 50px;
@@ -931,38 +938,38 @@ body section.contact .contact__links .links .social__links a {
   transition: all .5s ease-in-out;
 }
 
-body section.contact .contact__links .links .social__links a i {
+body section.contact .contact__links .links .social__links a i, html section.contact .contact__links .links .social__links a i {
   font-size: 16px;
   color: #0A1931;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
 
-body section.contact .contact__links .links .social__links a:hover {
+body section.contact .contact__links .links .social__links a:hover, html section.contact .contact__links .links .social__links a:hover {
   background: #684FFF;
   border: 1px solid #684FFF;
 }
 
-body section.contact .contact__links .links .social__links a:hover i {
+body section.contact .contact__links .links .social__links a:hover i, html section.contact .contact__links .links .social__links a:hover i {
   color: #FFFFFF;
 }
 
-body footer {
+body footer, html footer {
   padding: 30px 0px;
 }
 
-body footer p {
+body footer p, html footer p {
   text-align: center;
   font-size: 14px;
   color: #737D8C;
 }
 
-body footer p a {
+body footer p a, html footer p a {
   text-decoration: none;
   color: #684FFF;
 }
 
-body .mobile__menu {
+body .mobile__menu, html .mobile__menu {
   position: fixed;
   height: 100%;
   width: 100%;
@@ -975,26 +982,26 @@ body .mobile__menu {
   transition: all .5s ease-in-out;
 }
 
-body .mobile__menu .close {
+body .mobile__menu .close, html .mobile__menu .close {
   overflow: hidden;
   cursor: pointer;
 }
 
-body .mobile__menu .close i {
+body .mobile__menu .close i, html .mobile__menu .close i {
   color: #e3e0f5;
   font-weight: bolder;
 }
 
-body .mobile__menu ul {
+body .mobile__menu ul, html .mobile__menu ul {
   margin-top: 50px;
 }
 
-body .mobile__menu ul li {
+body .mobile__menu ul li, html .mobile__menu ul li {
   padding: 10px 0px;
   margin: 10px 0px;
 }
 
-body .mobile__menu ul li a {
+body .mobile__menu ul li a, html .mobile__menu ul li a {
   text-decoration: none;
   color: #eeecf8;
   font-size: 40px;
@@ -1005,6 +1012,21 @@ body .mobile__menu ul li a {
   padding: 5px;
   text-align: center;
   display: block;
+}
+
+.scroll__top {
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  cursor: pointer;
+  display: none;
+}
+
+.scroll__top i {
+  color: #684FFF;
+  font-size: 40px;
 }
 
 @media (min-width: 300px) and (max-width: 575.98px) {

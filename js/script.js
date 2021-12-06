@@ -7,11 +7,11 @@ $(document).ready(function () {
   $(".wrapper__main").delay(3000).fadeIn("slow");
 
   //mobile menu show hide
-  $(".ham__menu").click(function(){
+  $(".ham__menu").click(function () {
     $('.mobile__menu').slideDown();
   })
 
-  $('.close').click(function(){
+  $('.close').click(function () {
     $('.mobile__menu').slideUp();
   })
 
@@ -68,7 +68,7 @@ $(document).ready(function () {
       });
 
   });
-  
+
   //sticky nav
   $(window).scroll(function () {
     console.log($(this).scrollTop());
@@ -77,7 +77,22 @@ $(document).ready(function () {
     } else {
       $('nav').removeClass('sticky')
     }
+
+    if ($(this).scrollTop() >= 1020) {
+      $(".scroll__top").fadeIn()
+    } else {
+      $(".scroll__top").fadeOut()
+    }
   })
 
-  
+  //scroll top
+  $(".scroll__top").click(function () {
+    $('html, body').animate({ scrollTop: 0 }, '300');
+  })
+
+  let headerPostion = "<714";
+  let aboutPostion = "<1326";
+  let servicePostion = "<1938";
+  let workPosition = "<3060";
+  let contactPosition = ">4840";
 })
