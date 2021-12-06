@@ -21,674 +21,693 @@
 </head>
 
 <body>
-    <!-- header -->
-    <nav class="">
-        <div class="container">
-            <div class="row d-flex align-items-center">
-                <div class="col-6">
-                    <div class="nav__logo">
-                        <span>A.F</span>
+    <div id="overlayer"></div>
+    <span class="loader">
+        <span class="loader-inner"></span>
+    </span>
+    <div class="wrapper__main">
+        <!-- header -->
+        <nav class="">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-6">
+                        <div class="nav__logo">
+                            <span>A.F</span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-6">
-                    <div class="nav__links">
-                        <ul>
-                            <li>
-                                <a href="#"><span>about</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span>service</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span>works</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span>contacts</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="ham__menu">
-                        <i class="bi bi-menu-button-wide"></i>
+                    <div class="col-6">
+                        <div class="nav__links">
+                            <ul>
+                                <li>
+                                    <a href="#"><span>about</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>service</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>works</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>contacts</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ham__menu">
+                            <i class="bi bi-menu-button-wide"></i>
+                        </div>
                     </div>
                 </div>
             </div>
+        </nav>
+
+        <div class="mobile__menu">
+            <div class="close">
+                <i class="bi bi-x-lg"></i>
+            </div>
+            <ul>
+                <li><a href="#">about</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">works</a></li>
+                <li><a href="#">contacts</a></li>
+            </ul>
         </div>
-    </nav>
-    <header>
-        <section class="header__hero mt-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 order-2 order-lg-1">
-                        <div class="hero__text">
-                            <h4>Hello, I’m Albert, a UI/UX <span>Designer.</span></h4>
-                            <p>
-                                Product Designer, UI/UX Designer, and developer based in
-                                Brazil. Over the past 17 years, as an art director and
-                                designer, I’ve worked with big companies and up-and-coming
-                                startups.
-                            </p>
-                            <div class="buttons">
-                                <a href="#" class="mr-3">Hire Me</a>
-                                <a href="#">View work</a>
+        <header>
+            <section class="header__hero mt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 order-2 order-lg-1">
+                            <div class="hero__text">
+                                <h4>Hello, I’m Albert, a UI/UX <span>Designer.</span></h4>
+                                <p>
+                                    Product Designer, UI/UX Designer, and developer based in
+                                    Brazil. Over the past 17 years, as an art director and
+                                    designer, I’ve worked with big companies and up-and-coming
+                                    startups.
+                                </p>
+                                <div class="buttons">
+                                    <a href="#" class="mr-3">Hire Me</a>
+                                    <a href="#">View work</a>
+                                </div>
+                                <div class="follow__me mt-3">
+                                    <span>Follow Me On</span>
+                                    <div class="links">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="follow__me mt-3">
-                                <span>Follow Me On</span>
-                                <div class="links">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 order-1 order-lg-2">
+                            <div class="hearo__img">
+                                <div>
+                                    <img src="img/Image.png" class="w-100" alt="img" />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 order-1 order-lg-2">
-                        <div class="hearo__img">
-                            <div>
-                                <img src="img/Image.png" class="w-100" alt="img" />
+                </div>
+            </section>
+        </header>
+        <!-- header./ -->
+
+        <!-- intro -->
+        <section class="intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-5">
+                        <div class="intro__img">
+                            <img src="img/intro_img.png" class="w-100" alt="img" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7">
+                        <div class="intro__text">
+                            <h4>
+                                Product Designer, UI/UX Designer, and Developer based in Brazil.
+                            </h4>
+                            <p>
+                                Morbi quam velit, euismod in imperdiet vitae, elementum et elit.
+                                Nunc finibus, felis sit amet sollicitudin sollicitudin, nisi
+                                magna feugiat enim, in maximus urna enim ac tortor. Nunc in
+                                volutpat ipsum, molestie commodo odio. Quisque auctor nisi mi.
+                                Aenean venenatis sapien et interdum interdum.
+                            </p>
+                            <div class="achivement">
+                                <div class="acv_1">
+                                    <span class="counter" data-count="170">170+</span>
+                                    <p>Years of Experience</p>
+                                </div>
+                                <div class="acv_2">
+                                    <span class="counter" data-count="325">325+</span>
+                                    <p>Completed Projects</p>
+                                </div>
+                            </div>
+                            <div class="button">
+                                <a href="#">Say Hi <i class="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </header>
-    <!-- header./ -->
+        <!-- intro./ -->
 
-    <!-- intro -->
-    <section class="intro">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-5">
-                    <div class="intro__img">
-                        <img src="img/intro_img.png" class="w-100" alt="img" />
-                    </div>
-                </div>
-                <div class="col-12 col-lg-7">
-                    <div class="intro__text">
-                        <h4>
-                            Product Designer, UI/UX Designer, and Developer based in Brazil.
-                        </h4>
-                        <p>
-                            Morbi quam velit, euismod in imperdiet vitae, elementum et elit.
-                            Nunc finibus, felis sit amet sollicitudin sollicitudin, nisi
-                            magna feugiat enim, in maximus urna enim ac tortor. Nunc in
-                            volutpat ipsum, molestie commodo odio. Quisque auctor nisi mi.
-                            Aenean venenatis sapien et interdum interdum.
-                        </p>
-                        <div class="achivement">
-                            <div class="acv_1">
-                                <span class="counter" data-count="170">170+</span>
-                                <p>Years of Experience</p>
-                            </div>
-                            <div class="acv_2">
-                                <span class="counter" data-count="325">325+</span>
-                                <p>Completed Projects</p>
-                            </div>
-                        </div>
-                        <div class="button">
-                            <a href="#">Say Hi <i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- intro./ -->
-
-    <!-- service -->
-    <section class="service mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="service__header">
-                        <h4>My Service</h4>
-                        <div></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row cards mt-5">
-                <div class="col-12 col-md-6 col-lg-3 my-4">
-                    <div class="service__card rounded">
-                        <div class="top__icon">
-                            <i class="bi bi-stack"></i>
-                        </div>
-                        <div class="main__content">
-                            <h5>UI/UX Design</h5>
+        <!-- service -->
+        <section class="service mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="service__header">
+                            <h4>My Service</h4>
                             <div></div>
-                            <a class="discuss" href="#">
-                                <span>Discuss now</span>
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 my-4">
-                    <div class="service__card rounded">
-                        <div class="top__icon">
-                            <i class="bi bi-box"></i>
+                <div class="row cards mt-5">
+                    <div class="col-12 col-md-6 col-lg-3 my-4">
+                        <div class="service__card rounded">
+                            <div class="top__icon">
+                                <i class="bi bi-stack"></i>
+                            </div>
+                            <div class="main__content">
+                                <h5>UI/UX Design</h5>
+                                <div></div>
+                                <a class="discuss" href="#">
+                                    <span>Discuss now</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
                         </div>
-                        <div class="main__content">
-                            <h5>Product Design</h5>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 my-4">
+                        <div class="service__card rounded">
+                            <div class="top__icon">
+                                <i class="bi bi-box"></i>
+                            </div>
+                            <div class="main__content">
+                                <h5>Product Design</h5>
+                                <div></div>
+                                <a class="discuss" href="#">
+                                    <span>Discuss now</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 my-4">
+                        <div class="service__card rounded">
+                            <div class="top__icon">
+                                <i class="bi bi-door-open"></i>
+                            </div>
+                            <div class="main__content">
+                                <h5>Branding Design</h5>
+                                <div></div>
+                                <a class="discuss" href="#">
+                                    <span>Discuss now</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 my-4">
+                        <div class="service__card rounded">
+                            <div class="top__icon">
+                                <i class="bi bi-code"></i>
+                            </div>
+                            <div class="main__content">
+                                <h5>UI/UX Design</h5>
+                                <div></div>
+                                <a class="discuss" href="#">
+                                    <span>Discuss now</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- service./ -->
+
+        <!-- works -->
+        <section class="works mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="work__header">
+                            <h4>My Selected Work</h4>
                             <div></div>
-                            <a class="discuss" href="#">
-                                <span>Discuss now</span>
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 my-4">
-                    <div class="service__card rounded">
-                        <div class="top__icon">
-                            <i class="bi bi-door-open"></i>
-                        </div>
-                        <div class="main__content">
-                            <h5>Branding Design</h5>
-                            <div></div>
-                            <a class="discuss" href="#">
-                                <span>Discuss now</span>
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
+                <div class="row my-5 work__cards">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 my-4">
+                        <div class="work__card rounded">
+                            <div class="card__img">
+                                <img src="img/work_img-1.png" class="w-100" alt="img" />
+                            </div>
+                            <div class="card__text">
+                                <h4>Eduguard - E-learning Website</h4>
+                                <a class="see_work" href="#">
+                                    <span>View Project</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 my-4">
-                    <div class="service__card rounded">
-                        <div class="top__icon">
-                            <i class="bi bi-code"></i>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 my-4">
+                        <div class="work__card rounded">
+                            <div class="card__img">
+                                <img src="img/work_img_2.png" class="w-100" alt="img" />
+                            </div>
+                            <div class="card__text">
+                                <h4>Huma Marketing Agency</h4>
+                                <a class="see_work" href="#">
+                                    <span>View Project</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
                         </div>
-                        <div class="main__content">
-                            <h5>UI/UX Design</h5>
-                            <div></div>
-                            <a class="discuss" href="#">
-                                <span>Discuss now</span>
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 my-4">
+                        <div class="work__card rounded">
+                            <div class="card__img">
+                                <img src="img/work_img_3.png" class="w-100" alt="img" />
+                            </div>
+                            <div class="card__text">
+                                <h4>Huma Marketing Agency</h4>
+                                <a class="see_work" href="#">
+                                    <span>View Project</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 my-4">
+                        <div class="work__card rounded">
+                            <div class="card__img">
+                                <img src="img/work_img_4.png" class="w-100" alt="img" />
+                            </div>
+                            <div class="card__text">
+                                <h4>Huma Marketing Agency</h4>
+                                <a class="see_work" href="#">
+                                    <span>View Project</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 my-4">
+                        <div class="work__card rounded">
+                            <div class="card__img">
+                                <img src="img/work_img_5.png" class="w-100" alt="img" />
+                            </div>
+                            <div class="card__text">
+                                <h4>Huma Marketing Agency</h4>
+                                <a class="see_work" href="#">
+                                    <span>View Project</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 my-4">
+                        <div class="work__card rounded">
+                            <div class="card__img">
+                                <img src="img/work_img-6.png" class="w-100" alt="img" />
+                            </div>
+                            <div class="card__text">
+                                <h4>Huma Marketing Agency</h4>
+                                <a class="see_work" href="#">
+                                    <span>View Project</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- service./ -->
+        </section>
+        <!-- works./ -->
 
-    <!-- works -->
-    <section class="works mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="work__header">
-                        <h4>My Selected Work</h4>
-                        <div></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row my-5 work__cards">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-4 my-4">
-                    <div class="work__card rounded">
-                        <div class="card__img">
-                            <img src="img/work_img-1.png" class="w-100" alt="img" />
-                        </div>
-                        <div class="card__text">
-                            <h4>Eduguard - E-learning Website</h4>
-                            <a class="see_work" href="#">
-                                <span>View Project</span>
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-4 my-4">
-                    <div class="work__card rounded">
-                        <div class="card__img">
-                            <img src="img/work_img_2.png" class="w-100" alt="img" />
-                        </div>
-                        <div class="card__text">
-                            <h4>Huma Marketing Agency</h4>
-                            <a class="see_work" href="#">
-                                <span>View Project</span>
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-4 my-4">
-                    <div class="work__card rounded">
-                        <div class="card__img">
-                            <img src="img/work_img_3.png" class="w-100" alt="img" />
-                        </div>
-                        <div class="card__text">
-                            <h4>Huma Marketing Agency</h4>
-                            <a class="see_work" href="#">
-                                <span>View Project</span>
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-4 my-4">
-                    <div class="work__card rounded">
-                        <div class="card__img">
-                            <img src="img/work_img_4.png" class="w-100" alt="img" />
-                        </div>
-                        <div class="card__text">
-                            <h4>Huma Marketing Agency</h4>
-                            <a class="see_work" href="#">
-                                <span>View Project</span>
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-4 my-4">
-                    <div class="work__card rounded">
-                        <div class="card__img">
-                            <img src="img/work_img_5.png" class="w-100" alt="img" />
-                        </div>
-                        <div class="card__text">
-                            <h4>Huma Marketing Agency</h4>
-                            <a class="see_work" href="#">
-                                <span>View Project</span>
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-4 my-4">
-                    <div class="work__card rounded">
-                        <div class="card__img">
-                            <img src="img/work_img-6.png" class="w-100" alt="img" />
-                        </div>
-                        <div class="card__text">
-                            <h4>Huma Marketing Agency</h4>
-                            <a class="see_work" href="#">
-                                <span>View Project</span>
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- works./ -->
-
-    <!-- brands -->
-    <section class="brands">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-4 my-5">
-                    <div class="brand__info__text md-text-center">
-                        <p>
-                            I Worked with
-                            <span class="counter" data-count="289">289+ </span> Companies
-                            all over the World.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-8 my-5">
-                    <div class="row brand__slider__wrapper">
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 item1">
-                            <div class="barnd__logo__wrapper">
-                                <img src="img/YouTube-Logo.wine.svg" alt="img" class="w-100" />
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 item1">
-                            <div class="barnd__logo__wrapper">
-                                <img src="img/Google-Logo.wine.svg" class="w-100" alt="img" />
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 item1">
-                            <div class="barnd__logo__wrapper">
-                                <img src="img/Bitcoin-Logo.wine.svg" class="w-100" alt="img" />
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 item1">
-                            <div class="barnd__logo__wrapper">
-                                <img src="img/Line_(software)-Logo.wine.svg" class="w-100" alt="img" />
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 item1">
-                            <div class="barnd__logo__wrapper">
-                                <img src="img/Ripple_(payment_protocol)-Logo.wine.svg" alt="img" class="w-100" />
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 item1">
-                            <div class="barnd__logo__wrapper">
-                                <img src="img/Tencent_QQ-Logo.wine.svg" class="w-100" alt="img" />
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 item1">
-                            <div class="barnd__logo__wrapper">
-                                <img src="img/Zcoin-Logo.wine.svg" class="w-100" alt="img" />
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 item1">
-                            <div class="barnd__logo__wrapper">
-                                <img src="img/Bitcoin-Logo.wine.svg" class="w-100" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- brands./ -->
-
-    <!-- hire -->
-    <section class="hire__me">
-        <div class="container rounded">
-            <div class="row">
-                <div class="col-12">
-                    <div class="info">
-                        <h4>
-                            Got a Project in Mind? Let's Make Something Awesome Together.
-                        </h4>
-                        <a href="#">Hire Me <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- hire./ -->
-
-    <!-- testimonial -->
-    <section class="testimonial">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="testimonial__header">
-                        <h4>Client Testimonials</h4>
-                        <div></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row my-4 ">
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="testimonial__chat">
-                        <div class="row">
-                            <div class="col-12 my-2">
-                                <div class="chat active rounded">
-                                    <div class="chat__img mr-2">
-                                        <img src="img/pexels-andrea-piacquadio-3763188.jpg" class="w-100 rounded-full"
-                                            alt="img" />
-                                    </div>
-                                    <div class="chat__info">
-                                        <h6>Sundar Pichai</h6>
-                                        <p>CEO & Founder of <span>Google</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 my-2">
-                                <div class="chat rounded">
-                                    <div class="chat__img mr-2">
-                                        <img src="img/pexels-emily-garland-1499327.jpg" class="w-100 rounded-full"
-                                            alt="img" />
-                                    </div>
-                                    <div class="chat__info">
-                                        <h6>Sundar Pichai</h6>
-                                        <p>CEO & Founder of <span>Google</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 my-2">
-                                <div class="chat rounded">
-                                    <div class="chat__img mr-2">
-                                        <img src="img/pexels-pixabay-415829.jpg" class="w-100 rounded-full" alt="img" />
-                                    </div>
-                                    <div class="chat__info">
-                                        <h6>Sundar Pichai</h6>
-                                        <p>CEO & Founder of <span>Google</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 my-2">
-                                <div class="chat rounded">
-                                    <div class="chat__img mr-2">
-                                        <img src="img/pexels-tuấn-kiệt-jr-1382731.jpg" class="w-100 rounded-full"
-                                            alt="img" />
-                                    </div>
-                                    <div class="chat__info">
-                                        <h6>Sundar Pichai</h6>
-                                        <p>CEO & Founder of <span>Google</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-8 mt-2 hide__me">
-                    <div class="mesg rounded">
-                        <div class="
-                  mesg__header
-                  d-flex
-                  justify-content-between
-                  align-items-center
-                ">
-                            <div class="rating">
-                                <i class="bi bi-star-fill"></i>
-                                <span>5.0 Star Rating</span>
-                            </div>
-                            <i class="fas fa-quote-right text-lg"></i>
-                        </div>
-                        <div class="mseg__content mt-3">
+        <!-- brands -->
+        <section class="brands">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4 my-5">
+                        <div class="brand__info__text md-text-center">
                             <p>
-                                “If you're looking for someone who will challenge your UX/UI
-                                thinking and really cut to the core of what's important for
-                                users, then Jesse is your man. On top of that, he brings a
-                                level of enthusiasm to the craft that's energizing for
-                                everyone who works with him.”
+                                I Worked with
+                                <span class="counter" data-count="289">289+ </span> Companies
+                                all over the World.
                             </p>
                         </div>
-                        <div class="tool__tip"></div>
+                    </div>
+                    <div class="col-12 col-lg-8 my-5">
+                        <div class="row brand__slider__wrapper">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-3 item1">
+                                <div class="barnd__logo__wrapper">
+                                    <img src="img/YouTube-Logo.wine.svg" alt="img" class="w-100" />
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-3 item1">
+                                <div class="barnd__logo__wrapper">
+                                    <img src="img/Google-Logo.wine.svg" class="w-100" alt="img" />
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-3 item1">
+                                <div class="barnd__logo__wrapper">
+                                    <img src="img/Bitcoin-Logo.wine.svg" class="w-100" alt="img" />
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-3 item1">
+                                <div class="barnd__logo__wrapper">
+                                    <img src="img/Line_(software)-Logo.wine.svg" class="w-100" alt="img" />
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-3 item1">
+                                <div class="barnd__logo__wrapper">
+                                    <img src="img/Ripple_(payment_protocol)-Logo.wine.svg" alt="img" class="w-100" />
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-3 item1">
+                                <div class="barnd__logo__wrapper">
+                                    <img src="img/Tencent_QQ-Logo.wine.svg" class="w-100" alt="img" />
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-3 item1">
+                                <div class="barnd__logo__wrapper">
+                                    <img src="img/Zcoin-Logo.wine.svg" class="w-100" alt="img" />
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-3 item1">
+                                <div class="barnd__logo__wrapper">
+                                    <img src="img/Bitcoin-Logo.wine.svg" class="w-100" alt="img" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- testimonial./ -->
+        </section>
+        <!-- brands./ -->
 
-    <!-- blog & news -->
-    <section class="blog__news mt-5">
-        <div class="container">
-            <div class="row my-4">
+        <!-- hire -->
+        <section class="hire__me">
+            <div class="container rounded">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="info">
+                            <h4>
+                                Got a Project in Mind? Let's Make Something Awesome Together.
+                            </h4>
+                            <a href="#">Hire Me <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- hire./ -->
+
+        <!-- testimonial -->
+        <section class="testimonial">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="testimonial__header">
+                            <h4>Client Testimonials</h4>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4 ">
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="testimonial__chat">
+                            <div class="row">
+                                <div class="col-12 my-2">
+                                    <div class="chat active rounded">
+                                        <div class="chat__img mr-2">
+                                            <img src="img/pexels-andrea-piacquadio-3763188.jpg"
+                                                class="w-100 rounded-full" alt="img" />
+                                        </div>
+                                        <div class="chat__info">
+                                            <h6>Sundar Pichai</h6>
+                                            <p>CEO & Founder of <span>Google</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 my-2">
+                                    <div class="chat rounded">
+                                        <div class="chat__img mr-2">
+                                            <img src="img/pexels-emily-garland-1499327.jpg" class="w-100 rounded-full"
+                                                alt="img" />
+                                        </div>
+                                        <div class="chat__info">
+                                            <h6>Sundar Pichai</h6>
+                                            <p>CEO & Founder of <span>Google</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 my-2">
+                                    <div class="chat rounded">
+                                        <div class="chat__img mr-2">
+                                            <img src="img/pexels-pixabay-415829.jpg" class="w-100 rounded-full"
+                                                alt="img" />
+                                        </div>
+                                        <div class="chat__info">
+                                            <h6>Sundar Pichai</h6>
+                                            <p>CEO & Founder of <span>Google</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 my-2">
+                                    <div class="chat rounded">
+                                        <div class="chat__img mr-2">
+                                            <img src="img/pexels-tuấn-kiệt-jr-1382731.jpg" class="w-100 rounded-full"
+                                                alt="img" />
+                                        </div>
+                                        <div class="chat__info">
+                                            <h6>Sundar Pichai</h6>
+                                            <p>CEO & Founder of <span>Google</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8 mt-2 hide__me">
+                        <div class="mesg rounded">
+                            <div class="
+                      mesg__header
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                    ">
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <span>5.0 Star Rating</span>
+                                </div>
+                                <i class="fas fa-quote-right text-lg"></i>
+                            </div>
+                            <div class="mseg__content mt-3">
+                                <p>
+                                    “If you're looking for someone who will challenge your UX/UI
+                                    thinking and really cut to the core of what's important for
+                                    users, then Jesse is your man. On top of that, he brings a
+                                    level of enthusiasm to the craft that's energizing for
+                                    everyone who works with him.”
+                                </p>
+                            </div>
+                            <div class="tool__tip"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonial./ -->
+
+        <!-- blog & news -->
+        <section class="blog__news mt-5">
+            <div class="container">
+                <div class="row my-4">
+                    <div class="col-12">
+                        <div class="blog__news__header">
+                            <h4>Blog & News</h4>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 my-4">
+                        <div class="blog__card rounded">
+                            <div class="card__img">
+                                <img src="img/blog_1.jpg" class="w-100 rounded" alt="img" />
+                            </div>
+                            <div class="card__content">
+                                <span>24 May, 2021 . 9 min read</span>
+                                <div class="main">
+                                    <p>
+                                        23 Essential Skills for Successful Web Designers in 2021.
+                                    </p>
+                                </div>
+                                <div class="bottom">
+                                    <a href="#">
+                                        <span>Read More</span>
+                                        <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 my-4">
+                        <div class="blog__card rounded">
+                            <div class="card__img">
+                                <img src="img/blog_2 .jpg" class="w-100 rounded" alt="img" />
+                            </div>
+                            <div class="card__content">
+                                <span>24 May, 2021 . 9 min read</span>
+                                <div class="main">
+                                    <p>
+                                        23 Essential Skills for Successful Web Designers in 2021.
+                                    </p>
+                                </div>
+                                <div class="bottom">
+                                    <a href="#">
+                                        <span>Read More</span>
+                                        <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 my-4">
+                        <div class="blog__tabs">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-12 my-4">
+                                    <div class="tab">
+                                        <p>
+                                            10 Best Design Feedback and Annotation tools for
+                                            Designers.
+                                        </p>
+                                        <div class="read__more">
+                                            <span>READ MORE</span>
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-12 my-4">
+                                    <div class="tab">
+                                        <p>
+                                            20 Cool Fonts for Web and Graphic Design. (free + paid)
+                                        </p>
+                                        <div class="read__more">
+                                            <span>READ MORE</span>
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-12 my-4">
+                                    <div class="tab">
+                                        <p>8 Things You Need to Create a Restaurant Website.</p>
+                                        <div class="read__more">
+                                            <span>READ MORE</span>
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- blog & news./ -->
+
+        <!-- contact -->
+        <section class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-7 my-4">
+                        <form class="footer__form">
+                            <div class="form__header">
+                                <h4>Let me know here.</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="input__box">
+                                        <input type="text" placeholder="Name.." />
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="input__box">
+                                        <input type="email" placeholder="Email.." />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="input__box">
+                                        <input type="text" placeholder="Subjects.." />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="input__box">
+                                        <textarea type="text" placeholder="Message.." rows="4"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="input__box">
+                                        <button type="submit">
+                                            Send message <i class="bi bi-send"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-5 my-4">
+                        <div class="contact__links rounded">
+                            <div class="link__title">
+                                <h4>Get In Touch</h4>
+                            </div>
+                            <div class="links">
+                                <div class="link">
+                                    <div class="icon"><i class="bi bi-geo-alt"></i></div>
+                                    <div class="info">
+
+                                        <p>House #5, Street Number #98, brasilia- 70000-000,
+                                            Brazil.</p>
+
+                                    </div>
+                                </div>
+                                <div class="link">
+                                    <div class="icon"><i class="bi bi-envelope"></i></div>
+                                    <div class="info">
+                                        <p></p>
+                                        <p>albert.flores@gmail.com</p>
+                                        <p>albert.flores@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="link">
+                                    <div class="icon"><i class="bi bi-telephone"></i></div>
+                                    <div class="info">
+
+                                        <p>+55 955 258 2699</p>
+                                        <p>+55 955 100 9449</p>
+                                    </div>
+                                </div>
+
+                                <div class="social__links">
+                                    <a href="#"><i class="bi bi-behance"></i></a>
+                                    <a href="#"><i class="bi bi-dribbble"></i></a>
+                                    <a href="#"><i class="bi bi-facebook"></i></a>
+                                    <a href="#"><i class="bi bi-twitter"></i></a>
+                                    <a href="#"><i class="bi bi-instagram"></i></a>
+                                    <a href="#"><i class="bi bi-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact./ -->
+
+        <!-- footer -->
+        <footer>
+            <div class="row">
                 <div class="col-12">
-                    <div class="blog__news__header">
-                        <h4>Blog & News</h4>
-                        <div></div>
-                    </div>
+                    <p>© 2021 — Albert Flores. Html & Css by <a href="#">Shuvo.me</a> </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-4 my-4">
-                    <div class="blog__card rounded">
-                        <div class="card__img">
-                            <img src="img/blog_1.jpg" class="w-100 rounded" alt="img" />
-                        </div>
-                        <div class="card__content">
-                            <span>24 May, 2021 . 9 min read</span>
-                            <div class="main">
-                                <p>
-                                    23 Essential Skills for Successful Web Designers in 2021.
-                                </p>
-                            </div>
-                            <div class="bottom">
-                                <a href="#">
-                                    <span>Read More</span>
-                                    <i class="bi bi-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 my-4">
-                    <div class="blog__card rounded">
-                        <div class="card__img">
-                            <img src="img/blog_2 .jpg" class="w-100 rounded" alt="img" />
-                        </div>
-                        <div class="card__content">
-                            <span>24 May, 2021 . 9 min read</span>
-                            <div class="main">
-                                <p>
-                                    23 Essential Skills for Successful Web Designers in 2021.
-                                </p>
-                            </div>
-                            <div class="bottom">
-                                <a href="#">
-                                    <span>Read More</span>
-                                    <i class="bi bi-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4 my-4">
-                    <div class="blog__tabs">
-                        <div class="row">
-                            <div class="col-12 col-md-6 col-lg-12 my-4">
-                                <div class="tab">
-                                    <p>
-                                        10 Best Design Feedback and Annotation tools for
-                                        Designers.
-                                    </p>
-                                    <div class="read__more">
-                                        <span>READ MORE</span>
-                                        <i class="bi bi-arrow-right"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-12 my-4">
-                                <div class="tab">
-                                    <p>
-                                        20 Cool Fonts for Web and Graphic Design. (free + paid)
-                                    </p>
-                                    <div class="read__more">
-                                        <span>READ MORE</span>
-                                        <i class="bi bi-arrow-right"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-12 my-4">
-                                <div class="tab">
-                                    <p>8 Things You Need to Create a Restaurant Website.</p>
-                                    <div class="read__more">
-                                        <span>READ MORE</span>
-                                        <i class="bi bi-arrow-right"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- blog & news./ -->
-
-    <!-- contact -->
-    <section class="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-7 my-4">
-                    <form class="footer__form">
-                        <div class="form__header">
-                            <h4>Let me know here.</h4>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <div class="input__box">
-                                    <input type="text" placeholder="Name.." />
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="input__box">
-                                    <input type="email" placeholder="Email.." />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="input__box">
-                                    <input type="text" placeholder="Subjects.." />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="input__box">
-                                    <textarea type="text" placeholder="Message.." rows="4"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="input__box">
-                                    <button type="submit">
-                                        Send message <i class="bi bi-send"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-12 col-md-12 col-lg-5 my-4">
-                    <div class="contact__links rounded">
-                        <div class="link__title">
-                            <h4>Get In Touch</h4>
-                        </div>
-                        <div class="links">
-                            <div class="link">
-                                <div class="icon"><i class="bi bi-geo-alt"></i></div>
-                                <div class="info">
-
-                                    <p>House #5, Street Number #98, brasilia- 70000-000,
-                                        Brazil.</p>
-
-                                </div>
-                            </div>
-                            <div class="link">
-                                <div class="icon"><i class="bi bi-envelope"></i></div>
-                                <div class="info">
-                                    <p></p>
-                                    <p>albert.flores@gmail.com</p>
-                                    <p>albert.flores@gmail.com</p>
-                                </div>
-                            </div>
-                            <div class="link">
-                                <div class="icon"><i class="bi bi-telephone"></i></div>
-                                <div class="info">
-
-                                    <p>+55 955 258 2699</p>
-                                    <p>+55 955 100 9449</p>
-                                </div>
-                            </div>
-
-                            <div class="social__links">
-                                <a href="#"><i class="bi bi-behance"></i></a>
-                                <a href="#"><i class="bi bi-dribbble"></i></a>
-                                <a href="#"><i class="bi bi-facebook"></i></a>
-                                <a href="#"><i class="bi bi-twitter"></i></a>
-                                <a href="#"><i class="bi bi-instagram"></i></a>
-                                <a href="#"><i class="bi bi-youtube"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- contact./ -->
-
-    <!-- footer -->
-    <footer>
-        <div class="row">
-            <div class="col-12">
-                <p>© 2021 — Albert Flores. Html & Css by <a href="#">Shuvo.me</a> </p>
-            </div>
-        </div>
-    </footer>
-    <!-- footer./ -->
+        </footer>
+        <!-- footer./ -->
+    </div>
 
     <!-- scripts -->
     <script src="js/jquery-3.6.0.min.js"></script>
